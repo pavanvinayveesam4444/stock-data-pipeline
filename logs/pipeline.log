@@ -1,0 +1,374 @@
+[2026-05-03 21:15:56] INFO  __main__: Logging system initialized
+[2026-05-03 21:15:56] INFO  __main__: Stock Data Pipeline starting up...
+[2026-05-03 21:15:56] INFO  __main__: ==================================================
+[2026-05-03 21:15:56] INFO  __main__: PIPELINE STARTED
+[2026-05-03 21:15:56] INFO  __main__: Start time: 2026-05-03 21:15:56
+[2026-05-03 21:15:56] INFO  __main__: Stocks to process: ['AAPL', 'TSLA', 'JPM', 'MSFT', 'GOOGL']
+[2026-05-03 21:15:56] INFO  __main__: ==================================================
+[2026-05-03 21:15:56] INFO  etl.loader: Connected to database: database/stocks.db
+[2026-05-03 21:15:56] INFO  __main__: 
+Processing AAPL...
+[2026-05-03 21:15:56] INFO  __main__: EXTRACT: Fetching AAPL data...
+[2026-05-03 21:15:56] INFO  etl.extractor: Fetching AAPL data (attempt 1/3)
+[2026-05-03 21:15:57] INFO  etl.extractor: Successfully fetched 60 rows for AAPL
+[2026-05-03 21:15:57] INFO  __main__: EXTRACT complete: 60 rows fetched for AAPL
+[2026-05-03 21:15:57] INFO  __main__: TRANSFORM: Calculating indicators for AAPL...
+[2026-05-03 21:15:57] INFO  etl.transformer: Starting data transformation...
+[2026-05-03 21:15:57] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated daily returns
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-03 21:15:57] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-03 21:15:57] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-03 21:15:57] INFO  __main__: TRANSFORM complete: 59 rows processed for AAPL
+[2026-05-03 21:15:57] INFO  __main__: LOAD: Saving AAPL data to database...
+[2026-05-03 21:15:57] INFO  etl.loader: Saved 59 new rows for AAPL to database
+[2026-05-03 21:15:57] INFO  __main__: LOAD complete: 59 new rows saved for AAPL
+[2026-05-03 21:15:57] INFO  __main__: 
+Processing TSLA...
+[2026-05-03 21:15:57] INFO  __main__: EXTRACT: Fetching TSLA data...
+[2026-05-03 21:15:57] INFO  etl.extractor: Fetching TSLA data (attempt 1/3)
+[2026-05-03 21:15:57] INFO  etl.extractor: Successfully fetched 60 rows for TSLA
+[2026-05-03 21:15:57] INFO  __main__: EXTRACT complete: 60 rows fetched for TSLA
+[2026-05-03 21:15:57] INFO  __main__: TRANSFORM: Calculating indicators for TSLA...
+[2026-05-03 21:15:57] INFO  etl.transformer: Starting data transformation...
+[2026-05-03 21:15:57] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated daily returns
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-03 21:15:57] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-03 21:15:57] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-03 21:15:57] INFO  __main__: TRANSFORM complete: 59 rows processed for TSLA
+[2026-05-03 21:15:57] INFO  __main__: LOAD: Saving TSLA data to database...
+[2026-05-03 21:15:57] INFO  etl.loader: Saved 59 new rows for TSLA to database
+[2026-05-03 21:15:57] INFO  __main__: LOAD complete: 59 new rows saved for TSLA
+[2026-05-03 21:15:57] INFO  __main__: 
+Processing JPM...
+[2026-05-03 21:15:57] INFO  __main__: EXTRACT: Fetching JPM data...
+[2026-05-03 21:15:57] INFO  etl.extractor: Fetching JPM data (attempt 1/3)
+[2026-05-03 21:15:57] INFO  etl.extractor: Successfully fetched 60 rows for JPM
+[2026-05-03 21:15:57] INFO  __main__: EXTRACT complete: 60 rows fetched for JPM
+[2026-05-03 21:15:57] INFO  __main__: TRANSFORM: Calculating indicators for JPM...
+[2026-05-03 21:15:57] INFO  etl.transformer: Starting data transformation...
+[2026-05-03 21:15:57] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated daily returns
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-03 21:15:57] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-03 21:15:57] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-03 21:15:57] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-03 21:15:57] INFO  __main__: TRANSFORM complete: 59 rows processed for JPM
+[2026-05-03 21:15:57] INFO  __main__: LOAD: Saving JPM data to database...
+[2026-05-03 21:15:57] INFO  etl.loader: Saved 59 new rows for JPM to database
+[2026-05-03 21:15:57] INFO  __main__: LOAD complete: 59 new rows saved for JPM
+[2026-05-03 21:15:57] INFO  __main__: 
+Processing MSFT...
+[2026-05-03 21:15:57] INFO  __main__: EXTRACT: Fetching MSFT data...
+[2026-05-03 21:15:57] INFO  etl.extractor: Fetching MSFT data (attempt 1/3)
+[2026-05-03 21:15:58] INFO  etl.extractor: Successfully fetched 60 rows for MSFT
+[2026-05-03 21:15:58] INFO  __main__: EXTRACT complete: 60 rows fetched for MSFT
+[2026-05-03 21:15:58] INFO  __main__: TRANSFORM: Calculating indicators for MSFT...
+[2026-05-03 21:15:58] INFO  etl.transformer: Starting data transformation...
+[2026-05-03 21:15:58] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-03 21:15:58] INFO  etl.transformer: Calculated daily returns
+[2026-05-03 21:15:58] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-03 21:15:58] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-03 21:15:58] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-03 21:15:58] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-03 21:15:58] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-03 21:15:58] INFO  __main__: TRANSFORM complete: 59 rows processed for MSFT
+[2026-05-03 21:15:58] INFO  __main__: LOAD: Saving MSFT data to database...
+[2026-05-03 21:15:58] INFO  etl.loader: Saved 59 new rows for MSFT to database
+[2026-05-03 21:15:58] INFO  __main__: LOAD complete: 59 new rows saved for MSFT
+[2026-05-03 21:15:58] INFO  __main__: 
+Processing GOOGL...
+[2026-05-03 21:15:58] INFO  __main__: EXTRACT: Fetching GOOGL data...
+[2026-05-03 21:15:58] INFO  etl.extractor: Fetching GOOGL data (attempt 1/3)
+[2026-05-03 21:15:58] INFO  etl.extractor: Successfully fetched 60 rows for GOOGL
+[2026-05-03 21:15:58] INFO  __main__: EXTRACT complete: 60 rows fetched for GOOGL
+[2026-05-03 21:15:58] INFO  __main__: TRANSFORM: Calculating indicators for GOOGL...
+[2026-05-03 21:15:58] INFO  etl.transformer: Starting data transformation...
+[2026-05-03 21:15:58] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-03 21:15:58] INFO  etl.transformer: Calculated daily returns
+[2026-05-03 21:15:58] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-03 21:15:58] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-03 21:15:58] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-03 21:15:58] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-03 21:15:58] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-03 21:15:58] INFO  __main__: TRANSFORM complete: 59 rows processed for GOOGL
+[2026-05-03 21:15:58] INFO  __main__: LOAD: Saving GOOGL data to database...
+[2026-05-03 21:15:58] INFO  etl.loader: Saved 59 new rows for GOOGL to database
+[2026-05-03 21:15:58] INFO  __main__: LOAD complete: 59 new rows saved for GOOGL
+[2026-05-03 21:15:58] INFO  etl.loader: Database connection closed
+[2026-05-03 21:15:58] INFO  __main__: 
+==================================================
+[2026-05-03 21:15:58] INFO  __main__: PIPELINE COMPLETE — SUMMARY
+[2026-05-03 21:15:58] INFO  __main__: ==================================================
+[2026-05-03 21:15:58] INFO  __main__: Total stocks processed: 5
+[2026-05-03 21:15:58] INFO  __main__: Successful:             5
+[2026-05-03 21:15:58] INFO  __main__: Failed:                 0
+[2026-05-03 21:15:58] INFO  __main__: Total rows saved:       295
+[2026-05-03 21:15:58] INFO  __main__: Time taken:             2 seconds
+[2026-05-03 21:15:58] INFO  __main__: --------------------------------------------------
+[2026-05-03 21:15:58] INFO  __main__: ✓ AAPL: 59 rows saved
+[2026-05-03 21:15:58] INFO  __main__: ✓ TSLA: 59 rows saved
+[2026-05-03 21:15:58] INFO  __main__: ✓ JPM: 59 rows saved
+[2026-05-03 21:15:58] INFO  __main__: ✓ MSFT: 59 rows saved
+[2026-05-03 21:15:58] INFO  __main__: ✓ GOOGL: 59 rows saved
+[2026-05-03 21:15:58] INFO  __main__: ==================================================
+[2026-05-03 21:15:58] INFO  __main__: Scheduling pipeline to run daily at 18:00
+[2026-05-03 21:15:58] INFO  __main__: Scheduler started. Pipeline will run automatically.
+[2026-05-03 21:15:58] INFO  __main__: Press Ctrl+C to stop.
+[2026-05-04 20:31:26] INFO  __main__: Logging system initialized
+[2026-05-04 20:31:26] INFO  __main__: Stock Data Pipeline starting up...
+[2026-05-04 20:31:26] INFO  __main__: ==================================================
+[2026-05-04 20:31:26] INFO  __main__: PIPELINE STARTED
+[2026-05-04 20:31:26] INFO  __main__: Start time: 2026-05-04 20:31:26
+[2026-05-04 20:31:26] INFO  __main__: Stocks to process: ['AAPL', 'TSLA', 'JPM', 'MSFT', 'GOOGL']
+[2026-05-04 20:31:26] INFO  __main__: ==================================================
+[2026-05-04 20:31:26] INFO  etl.loader: Connected to database: database/stocks.db
+[2026-05-04 20:31:26] INFO  __main__: 
+Processing AAPL...
+[2026-05-04 20:31:26] INFO  __main__: EXTRACT: Fetching AAPL data...
+[2026-05-04 20:31:26] INFO  etl.extractor: Fetching AAPL data (attempt 1/3)
+[2026-05-04 20:31:27] INFO  etl.extractor: Successfully fetched 60 rows for AAPL
+[2026-05-04 20:31:27] INFO  __main__: EXTRACT complete: 60 rows fetched for AAPL
+[2026-05-04 20:31:27] INFO  __main__: TRANSFORM: Calculating indicators for AAPL...
+[2026-05-04 20:31:27] INFO  etl.transformer: Starting data transformation...
+[2026-05-04 20:31:27] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated daily returns
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-04 20:31:27] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-04 20:31:27] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-04 20:31:27] INFO  __main__: TRANSFORM complete: 59 rows processed for AAPL
+[2026-05-04 20:31:27] INFO  __main__: LOAD: Saving AAPL data to database...
+[2026-05-04 20:31:27] INFO  etl.loader: Saved 59 new rows for AAPL to database
+[2026-05-04 20:31:27] INFO  __main__: LOAD complete: 59 new rows saved for AAPL
+[2026-05-04 20:31:27] INFO  __main__: 
+Processing TSLA...
+[2026-05-04 20:31:27] INFO  __main__: EXTRACT: Fetching TSLA data...
+[2026-05-04 20:31:27] INFO  etl.extractor: Fetching TSLA data (attempt 1/3)
+[2026-05-04 20:31:27] INFO  etl.extractor: Successfully fetched 60 rows for TSLA
+[2026-05-04 20:31:27] INFO  __main__: EXTRACT complete: 60 rows fetched for TSLA
+[2026-05-04 20:31:27] INFO  __main__: TRANSFORM: Calculating indicators for TSLA...
+[2026-05-04 20:31:27] INFO  etl.transformer: Starting data transformation...
+[2026-05-04 20:31:27] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated daily returns
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-04 20:31:27] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-04 20:31:27] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-04 20:31:27] INFO  __main__: TRANSFORM complete: 59 rows processed for TSLA
+[2026-05-04 20:31:27] INFO  __main__: LOAD: Saving TSLA data to database...
+[2026-05-04 20:31:27] INFO  etl.loader: Saved 59 new rows for TSLA to database
+[2026-05-04 20:31:27] INFO  __main__: LOAD complete: 59 new rows saved for TSLA
+[2026-05-04 20:31:27] INFO  __main__: 
+Processing JPM...
+[2026-05-04 20:31:27] INFO  __main__: EXTRACT: Fetching JPM data...
+[2026-05-04 20:31:27] INFO  etl.extractor: Fetching JPM data (attempt 1/3)
+[2026-05-04 20:31:27] INFO  etl.extractor: Successfully fetched 60 rows for JPM
+[2026-05-04 20:31:27] INFO  __main__: EXTRACT complete: 60 rows fetched for JPM
+[2026-05-04 20:31:27] INFO  __main__: TRANSFORM: Calculating indicators for JPM...
+[2026-05-04 20:31:27] INFO  etl.transformer: Starting data transformation...
+[2026-05-04 20:31:27] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated daily returns
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-04 20:31:27] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-04 20:31:27] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-04 20:31:27] INFO  __main__: TRANSFORM complete: 59 rows processed for JPM
+[2026-05-04 20:31:27] INFO  __main__: LOAD: Saving JPM data to database...
+[2026-05-04 20:31:27] INFO  etl.loader: Saved 59 new rows for JPM to database
+[2026-05-04 20:31:27] INFO  __main__: LOAD complete: 59 new rows saved for JPM
+[2026-05-04 20:31:27] INFO  __main__: 
+Processing MSFT...
+[2026-05-04 20:31:27] INFO  __main__: EXTRACT: Fetching MSFT data...
+[2026-05-04 20:31:27] INFO  etl.extractor: Fetching MSFT data (attempt 1/3)
+[2026-05-04 20:31:27] INFO  etl.extractor: Successfully fetched 60 rows for MSFT
+[2026-05-04 20:31:27] INFO  __main__: EXTRACT complete: 60 rows fetched for MSFT
+[2026-05-04 20:31:27] INFO  __main__: TRANSFORM: Calculating indicators for MSFT...
+[2026-05-04 20:31:27] INFO  etl.transformer: Starting data transformation...
+[2026-05-04 20:31:27] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated daily returns
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-04 20:31:27] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-04 20:31:27] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-04 20:31:27] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-04 20:31:27] INFO  __main__: TRANSFORM complete: 59 rows processed for MSFT
+[2026-05-04 20:31:27] INFO  __main__: LOAD: Saving MSFT data to database...
+[2026-05-04 20:31:27] INFO  etl.loader: Saved 59 new rows for MSFT to database
+[2026-05-04 20:31:27] INFO  __main__: LOAD complete: 59 new rows saved for MSFT
+[2026-05-04 20:31:27] INFO  __main__: 
+Processing GOOGL...
+[2026-05-04 20:31:27] INFO  __main__: EXTRACT: Fetching GOOGL data...
+[2026-05-04 20:31:27] INFO  etl.extractor: Fetching GOOGL data (attempt 1/3)
+[2026-05-04 20:31:28] INFO  etl.extractor: Successfully fetched 60 rows for GOOGL
+[2026-05-04 20:31:28] INFO  __main__: EXTRACT complete: 60 rows fetched for GOOGL
+[2026-05-04 20:31:28] INFO  __main__: TRANSFORM: Calculating indicators for GOOGL...
+[2026-05-04 20:31:28] INFO  etl.transformer: Starting data transformation...
+[2026-05-04 20:31:28] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-04 20:31:28] INFO  etl.transformer: Calculated daily returns
+[2026-05-04 20:31:28] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-04 20:31:28] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-04 20:31:28] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-04 20:31:28] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-04 20:31:28] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-04 20:31:28] INFO  __main__: TRANSFORM complete: 59 rows processed for GOOGL
+[2026-05-04 20:31:28] INFO  __main__: LOAD: Saving GOOGL data to database...
+[2026-05-04 20:31:28] INFO  etl.loader: Saved 59 new rows for GOOGL to database
+[2026-05-04 20:31:28] INFO  __main__: LOAD complete: 59 new rows saved for GOOGL
+[2026-05-04 20:31:28] INFO  etl.loader: Database connection closed
+[2026-05-04 20:31:28] INFO  __main__: 
+==================================================
+[2026-05-04 20:31:28] INFO  __main__: PIPELINE COMPLETE — SUMMARY
+[2026-05-04 20:31:28] INFO  __main__: ==================================================
+[2026-05-04 20:31:28] INFO  __main__: Total stocks processed: 5
+[2026-05-04 20:31:28] INFO  __main__: Successful:             5
+[2026-05-04 20:31:28] INFO  __main__: Failed:                 0
+[2026-05-04 20:31:28] INFO  __main__: Total rows saved:       295
+[2026-05-04 20:31:28] INFO  __main__: Time taken:             1 seconds
+[2026-05-04 20:31:28] INFO  __main__: --------------------------------------------------
+[2026-05-04 20:31:28] INFO  __main__: ✓ AAPL: 59 rows saved
+[2026-05-04 20:31:28] INFO  __main__: ✓ TSLA: 59 rows saved
+[2026-05-04 20:31:28] INFO  __main__: ✓ JPM: 59 rows saved
+[2026-05-04 20:31:28] INFO  __main__: ✓ MSFT: 59 rows saved
+[2026-05-04 20:31:28] INFO  __main__: ✓ GOOGL: 59 rows saved
+[2026-05-04 20:31:28] INFO  __main__: ==================================================
+[2026-05-04 20:31:28] INFO  __main__: Scheduling pipeline to run daily at 18:00
+[2026-05-04 20:31:28] INFO  __main__: Scheduler started. Pipeline will run automatically.
+[2026-05-04 20:31:28] INFO  __main__: Press Ctrl+C to stop.
+[2026-05-10 13:25:28] INFO  __main__: Logging system initialized
+[2026-05-10 13:25:28] INFO  __main__: Stock Data Pipeline starting up...
+[2026-05-10 13:25:28] INFO  __main__: ==================================================
+[2026-05-10 13:25:28] INFO  __main__: PIPELINE STARTED
+[2026-05-10 13:25:28] INFO  __main__: Start time: 2026-05-10 13:25:28
+[2026-05-10 13:25:28] INFO  __main__: Stocks to process: ['AAPL', 'TSLA', 'JPM', 'MSFT', 'GOOGL']
+[2026-05-10 13:25:28] INFO  __main__: ==================================================
+[2026-05-10 13:25:28] INFO  etl.loader: Connected to database: database/stocks.db
+[2026-05-10 13:25:28] INFO  __main__: 
+Processing AAPL...
+[2026-05-10 13:25:28] INFO  __main__: EXTRACT: Fetching AAPL data...
+[2026-05-10 13:25:28] INFO  etl.extractor: Fetching AAPL data (attempt 1/3)
+[2026-05-10 13:25:28] INFO  etl.extractor: Successfully fetched 60 rows for AAPL
+[2026-05-10 13:25:28] INFO  __main__: EXTRACT complete: 60 rows fetched for AAPL
+[2026-05-10 13:25:28] INFO  __main__: TRANSFORM: Calculating indicators for AAPL...
+[2026-05-10 13:25:28] INFO  etl.transformer: Starting data transformation...
+[2026-05-10 13:25:28] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-10 13:25:28] INFO  etl.transformer: Calculated daily returns
+[2026-05-10 13:25:28] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-10 13:25:28] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-10 13:25:28] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-10 13:25:28] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-10 13:25:28] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-10 13:25:28] INFO  __main__: TRANSFORM complete: 59 rows processed for AAPL
+[2026-05-10 13:25:28] INFO  __main__: LOAD: Saving AAPL data to database...
+[2026-05-10 13:25:28] INFO  etl.loader: Removed 55 duplicate rows for AAPL
+[2026-05-10 13:25:28] INFO  etl.loader: Saved 4 new rows for AAPL to database
+[2026-05-10 13:25:28] INFO  __main__: LOAD complete: 4 new rows saved for AAPL
+[2026-05-10 13:25:28] INFO  __main__: 
+Processing TSLA...
+[2026-05-10 13:25:28] INFO  __main__: EXTRACT: Fetching TSLA data...
+[2026-05-10 13:25:28] INFO  etl.extractor: Fetching TSLA data (attempt 1/3)
+[2026-05-10 13:25:28] INFO  etl.extractor: Successfully fetched 60 rows for TSLA
+[2026-05-10 13:25:28] INFO  __main__: EXTRACT complete: 60 rows fetched for TSLA
+[2026-05-10 13:25:28] INFO  __main__: TRANSFORM: Calculating indicators for TSLA...
+[2026-05-10 13:25:28] INFO  etl.transformer: Starting data transformation...
+[2026-05-10 13:25:28] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-10 13:25:28] INFO  etl.transformer: Calculated daily returns
+[2026-05-10 13:25:28] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-10 13:25:28] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-10 13:25:28] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-10 13:25:28] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-10 13:25:28] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-10 13:25:28] INFO  __main__: TRANSFORM complete: 59 rows processed for TSLA
+[2026-05-10 13:25:28] INFO  __main__: LOAD: Saving TSLA data to database...
+[2026-05-10 13:25:28] INFO  etl.loader: Removed 55 duplicate rows for TSLA
+[2026-05-10 13:25:28] INFO  etl.loader: Saved 4 new rows for TSLA to database
+[2026-05-10 13:25:28] INFO  __main__: LOAD complete: 4 new rows saved for TSLA
+[2026-05-10 13:25:28] INFO  __main__: 
+Processing JPM...
+[2026-05-10 13:25:28] INFO  __main__: EXTRACT: Fetching JPM data...
+[2026-05-10 13:25:28] INFO  etl.extractor: Fetching JPM data (attempt 1/3)
+[2026-05-10 13:25:29] INFO  etl.extractor: Successfully fetched 60 rows for JPM
+[2026-05-10 13:25:29] INFO  __main__: EXTRACT complete: 60 rows fetched for JPM
+[2026-05-10 13:25:29] INFO  __main__: TRANSFORM: Calculating indicators for JPM...
+[2026-05-10 13:25:29] INFO  etl.transformer: Starting data transformation...
+[2026-05-10 13:25:29] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated daily returns
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-10 13:25:29] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-10 13:25:29] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-10 13:25:29] INFO  __main__: TRANSFORM complete: 59 rows processed for JPM
+[2026-05-10 13:25:29] INFO  __main__: LOAD: Saving JPM data to database...
+[2026-05-10 13:25:29] INFO  etl.loader: Removed 55 duplicate rows for JPM
+[2026-05-10 13:25:29] INFO  etl.loader: Saved 4 new rows for JPM to database
+[2026-05-10 13:25:29] INFO  __main__: LOAD complete: 4 new rows saved for JPM
+[2026-05-10 13:25:29] INFO  __main__: 
+Processing MSFT...
+[2026-05-10 13:25:29] INFO  __main__: EXTRACT: Fetching MSFT data...
+[2026-05-10 13:25:29] INFO  etl.extractor: Fetching MSFT data (attempt 1/3)
+[2026-05-10 13:25:29] INFO  etl.extractor: Successfully fetched 60 rows for MSFT
+[2026-05-10 13:25:29] INFO  __main__: EXTRACT complete: 60 rows fetched for MSFT
+[2026-05-10 13:25:29] INFO  __main__: TRANSFORM: Calculating indicators for MSFT...
+[2026-05-10 13:25:29] INFO  etl.transformer: Starting data transformation...
+[2026-05-10 13:25:29] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated daily returns
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-10 13:25:29] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-10 13:25:29] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-10 13:25:29] INFO  __main__: TRANSFORM complete: 59 rows processed for MSFT
+[2026-05-10 13:25:29] INFO  __main__: LOAD: Saving MSFT data to database...
+[2026-05-10 13:25:29] INFO  etl.loader: Removed 55 duplicate rows for MSFT
+[2026-05-10 13:25:29] INFO  etl.loader: Saved 4 new rows for MSFT to database
+[2026-05-10 13:25:29] INFO  __main__: LOAD complete: 4 new rows saved for MSFT
+[2026-05-10 13:25:29] INFO  __main__: 
+Processing GOOGL...
+[2026-05-10 13:25:29] INFO  __main__: EXTRACT: Fetching GOOGL data...
+[2026-05-10 13:25:29] INFO  etl.extractor: Fetching GOOGL data (attempt 1/3)
+[2026-05-10 13:25:29] INFO  etl.extractor: Successfully fetched 60 rows for GOOGL
+[2026-05-10 13:25:29] INFO  __main__: EXTRACT complete: 60 rows fetched for GOOGL
+[2026-05-10 13:25:29] INFO  __main__: TRANSFORM: Calculating indicators for GOOGL...
+[2026-05-10 13:25:29] INFO  etl.transformer: Starting data transformation...
+[2026-05-10 13:25:29] INFO  etl.transformer: Flattened multi-level column names
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated daily returns
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated 7-day and 30-day moving averages
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated 20-day volatility
+[2026-05-10 13:25:29] INFO  etl.transformer: Calculated 14-day RSI
+[2026-05-10 13:25:29] INFO  etl.transformer: Dropped 1 rows with insufficient data
+[2026-05-10 13:25:29] INFO  etl.transformer: Transformation complete: 59 rows with 10 columns
+[2026-05-10 13:25:29] INFO  __main__: TRANSFORM complete: 59 rows processed for GOOGL
+[2026-05-10 13:25:29] INFO  __main__: LOAD: Saving GOOGL data to database...
+[2026-05-10 13:25:29] INFO  etl.loader: Removed 55 duplicate rows for GOOGL
+[2026-05-10 13:25:29] INFO  etl.loader: Saved 4 new rows for GOOGL to database
+[2026-05-10 13:25:29] INFO  __main__: LOAD complete: 4 new rows saved for GOOGL
+[2026-05-10 13:25:29] INFO  etl.loader: Database connection closed
+[2026-05-10 13:25:29] INFO  __main__: 
+==================================================
+[2026-05-10 13:25:29] INFO  __main__: PIPELINE COMPLETE — SUMMARY
+[2026-05-10 13:25:29] INFO  __main__: ==================================================
+[2026-05-10 13:25:29] INFO  __main__: Total stocks processed: 5
+[2026-05-10 13:25:29] INFO  __main__: Successful:             5
+[2026-05-10 13:25:29] INFO  __main__: Failed:                 0
+[2026-05-10 13:25:29] INFO  __main__: Total rows saved:       20
+[2026-05-10 13:25:29] INFO  __main__: Time taken:             1 seconds
+[2026-05-10 13:25:29] INFO  __main__: --------------------------------------------------
+[2026-05-10 13:25:29] INFO  __main__: ✓ AAPL: 4 rows saved
+[2026-05-10 13:25:29] INFO  __main__: ✓ TSLA: 4 rows saved
+[2026-05-10 13:25:29] INFO  __main__: ✓ JPM: 4 rows saved
+[2026-05-10 13:25:29] INFO  __main__: ✓ MSFT: 4 rows saved
+[2026-05-10 13:25:29] INFO  __main__: ✓ GOOGL: 4 rows saved
+[2026-05-10 13:25:29] INFO  __main__: ==================================================
+[2026-05-10 13:25:29] INFO  __main__: Scheduling pipeline to run daily at 18:00
+[2026-05-10 13:25:29] INFO  __main__: Scheduler started. Pipeline will run automatically.
+[2026-05-10 13:25:29] INFO  __main__: Press Ctrl+C to stop.
